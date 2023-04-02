@@ -1,0 +1,103 @@
+
+<!-- saved from url=(0242)file:///C:/Users/Hp/Desktop/All/Courses/Web_Programming/Web_Hassouna/Web_Training/projects/%D8%B3%D8%A8%D8%AD%D9%87%20%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D9%87_%D8%B1%D9%85%D8%B6%D8%A7%D9%86/%D8%B1%D9%85%D8%B6%D8%A7%D9%86%20.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                                              <!--title and data about the website-->
+    <title>مسبحه الكترونيه</title>
+    <link rel="icon" href="file:///C:/Users/Hp/Desktop/All/Life/hope1.jpg">
+    <meta name="author" content="ghada mohammed">
+    <meta name="description" content="سبحه الكترونيه ">
+    <meta name="keywords" content="تسبيح ,رمضان كريم">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+                                              <!--css styles-->
+    <style>
+        body{
+           background-color:darkviolet;
+        }
+        
+        #div1{
+            height:200px;
+            width:200px;
+            background-color:aqua;
+            position:absolute;
+            top:200px;
+            left:600px;
+            border:5px ridge red;
+            border-top-right-radius:50px;              /*good*/
+            border-top-left-radius:50px; 
+            border-bottom-left-radius:50px;
+            border-bottom-right-radius:50px;
+            text-align: center;
+        }
+        
+        #div2{
+            background-color:blue;
+            height:30px;
+            position:absolute;
+            width:100px;
+            top:50px;
+            left:50px;
+            display:100000px;                        /*good*/
+            border:2px solid white;
+            color:white;
+            text-align: center;
+            border-radius:10px;
+            padding-top:5px;
+
+        }
+        #input1{
+            position:absolute;
+            top:100px;
+            left:50px;
+            background-color:green;
+            border:2px solid white;
+            color:white;
+        }
+        
+        #input2{
+            position:absolute;
+            top:100px;
+            right:46px;
+            background-color:red;
+            border:2px solid white;
+            color:white;
+        }
+        
+        p{  background-color: blue;
+            color:white;
+            height:20px;
+            width:100px;
+            border-radius:6px;
+            border:2px dotted white;
+        }
+    </style>
+    </head>
+<body>
+    
+    <div id="div1">
+    <div id="div2">
+           0
+    </div>
+    <input type="button" id="input1" value="count" onclick="count();">
+    <input type="button" id="input2" value="reset" onclick="resett();">
+    <p style="position:absolute;top:130px;left:50px;">استغفر الله الععظيم</p>
+    </div>
+                                                             <!-- java script-->
+    <script>
+       
+     var counter=1;                                       //الصفر اتعرض خلاص
+     function count(){
+         window.div2.innerHTML=counter++;
+        
+     } 
+     function resett(){
+          window.div2.innerHTML=0;                        //imp
+     }
+        
+     setTimeout(function(){
+         window.alert("صلى على رسول الله ");
+     },10000);
+    </script>
+    
+
+
+</body></html>
